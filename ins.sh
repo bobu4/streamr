@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo tee <<EOF >/dev/null /root/str.sh
 #!/bin/bash
 wallet_address=$(docker logs streamr_1 | grep -oPm1 "(?<=Network node 'miner-node' \(id\=)([^%]+)(?=\) running)")
